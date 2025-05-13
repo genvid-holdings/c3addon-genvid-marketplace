@@ -1,6 +1,9 @@
-=================================
-Genvid Construct 3 Addon Template
-=================================
+# Genvid Construct 3 Addon Template
+
+## Template Setup
+
+1. Replace the name of the module `c3addon-template` with your own.
+2. Replace all occurences of `ID_OF_THE_PLUGIN` with the plugin's ID.
 
 ## To use
 
@@ -17,7 +20,7 @@ Because of the restricted CSP in Construct3, make sure to use http://localhost:8
 ## To build
 
 ```bash
-cd src
-7z a -tzip -r ..\template-addon.c3addon .
-cd -
+npm run all:{platform}
 ```
+
+where platform is either `windows` or `posix`.

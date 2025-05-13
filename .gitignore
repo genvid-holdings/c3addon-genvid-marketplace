@@ -55,3 +55,5 @@ Thumbs.db
 *.c3addon
 ios/
 html5/
+.vscode
+build*/
