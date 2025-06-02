@@ -1,0 +1,29 @@
+﻿{
+	"$schema": "../SDK/plugin-sdk/v2/plugin.addon.schema.json",
+	"is-c3-addon": true,
+	"sdk-version": 2,
+	"min-construct-version": "r401",
+	"type": "plugin",
+	"name": "Genvid Marketplace",
+	"id": "Genvid_Marketplace",
+	"version": "1.0.0.0",
+	"author": "Genvid Technologies, LLC",
+	"website": "https://bitbucket.org/genvidtech/c3addon-genvid-marketplace",
+	"documentation": "https://bitbucket.org/genvidtech/c3addon-genvid-marketplace",
+	"description": "Integration of the MarketplaceKit/InstallSource API",
+	"editor-scripts": [
+		"plugin.js"
+	],
+	"file-list": [
+		"c3runtime/main.js",
+		"c3runtime/plugin.js",
+		"c3runtime/instance.js",
+		"c3runtime/expressions.js",
+		"c3runtime/domSide.js",
+		"lang/en-US.json",
+		"aces.json",
+		"addon.json",
+		"icon.svg",
+		"plugin.js"
+	]
+}

@@ -1,0 +1,17 @@
+﻿{
+    "$schema": "../SDK/plugin-sdk/v2/aces.schema.json",
+    "marketplace": {
+        "expressions": [
+            {
+                "id": "marketplace",
+                "expressionName": "Marketplace",
+                "returnType": "string"
+            },
+            {
+                "id": "marketplace-info",
+                "expressionName": "MarketplaceInfo",
+                "returnType": "string"
+            }
+        ]
+    }
+}

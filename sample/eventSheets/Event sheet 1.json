@@ -1,0 +1,35 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 606872742126566
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Name",
+					"sid": 481599303869553,
+					"parameters": {
+						"text": "Marketplace.Marketplace"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Details",
+					"sid": 730518123423922,
+					"parameters": {
+						"text": "Marketplace.MarketplaceInfo"
+					}
+				}
+			],
+			"sid": 759168418798106
+		}
+	],
+	"sid": 135670874317828
+}

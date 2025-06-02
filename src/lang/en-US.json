@@ -1,0 +1,34 @@
+﻿{
+	"$schema": "../../SDK/plugin-sdk/v2/plugin.lang.schema.json",
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Genvid Marketplace.",
+	"text": {
+		"plugins": {
+			"genvid_marketplace": {
+				"name": "GenvidMarketplace",
+				"description": "Integration of MarketplaceKit/SourceInstall API.",
+				"help-url": "https://bitbucket.org/genvidtech/c3addon-genvid-marketplace",
+				"properties": {
+				},
+				"aceCategories": {
+					"marketplace": "Marketplace"
+				},
+				"expressions": {
+					"marketplace": {
+						"description": "Return the Marketplace identifier",
+						"translated-name": "Marketplace"
+					},
+					"marketplace-info": {
+						"description": "Return additional info if available.",
+						"translated-name": "MarketplaceInfo"
+					}
+				},
+				"debugger": {
+					"title": "Genvid Marketplace",
+					"name": "Name",
+					"info": "Details"
+				}
+			}
+		}
+	}
+}

@@ -1,9 +1,5 @@
-# Genvid Construct 3 Addon Template
+# Genvid Construct 3 Addon for Marketplace
 
-## Template Setup
-
-1. Replace the name of the module `c3addon-template` with your own.
-2. Replace all occurences of `ID_OF_THE_PLUGIN` with the plugin's ID.
 
 ## To use
 

@@ -19,7 +19,7 @@ parameters:
     type: string
   addon_name:
     type: string
-    default: "ID_OF_THE_PLUGIN"
+    default: "Genvid_Marketplace"
   node_version:
     type: string
     default: "22.14"
@@ -35,9 +35,9 @@ commands:
           command: |
             az login \
               --service-principal \
-              --username ${AZURE_SP_APPID} \
-              --tenant ${AZURE_SP_TENANT} \
-              --password ${AZURE_SP_PASSWORD}
+              --username=${AZURE_SP_APPID} \
+              --tenant=${AZURE_SP_TENANT} \
+              --password=${AZURE_SP_PASSWORD}
 
 jobs:
   packages:
@@ -71,7 +71,7 @@ jobs:
           name: Build
           command: |
             npm run build
-            npm run zip:linux
+            npm run zip:posix
       - store_artifacts:
           path: << pipeline.parameters.addon_name >>.c3addon
       - run:

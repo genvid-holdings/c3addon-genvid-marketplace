@@ -1,0 +1,12 @@
+{
+	"name": "Marketplace",
+	"plugin-id": "Genvid_Marketplace",
+	"sid": 602391002442310,
+	"singleglobal-inst": {
+		"type": "Marketplace",
+		"properties": {},
+		"uid": 6,
+		"sid": 174149038425516,
+		"tags": ""
+	}
+}
