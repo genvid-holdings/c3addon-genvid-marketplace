@@ -4,5 +4,9 @@
   },
   "paths": {
     "c3project": "sample/project.c3proj"
+  },
+  "commands": {
+    "lint": "npm run lint",
+    "build": "npm run build"
   }
 }
