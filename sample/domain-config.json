@@ -1,0 +1,13 @@
+{
+  "domains": {
+    "Sample": {
+      "description": "Stub Construct 3 project under sample/ used to exercise the Genvid marketplace addon (src/). Not a real game; one event sheet, one layout, three object types.",
+      "strategy": "supporting",
+      "eventSheetDirs": ["."],
+      "layoutDirs": ["."]
+    }
+  },
+  "overrides": {
+    "eventSheets/Event sheet 1.json": "Sample"
+  }
+}

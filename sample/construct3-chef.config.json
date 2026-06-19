@@ -1,0 +1,7 @@
+{
+  "extractedDir": "extracted",
+  "ops": {
+    "dir": "ops",
+    "watch": true
+  }
+}
