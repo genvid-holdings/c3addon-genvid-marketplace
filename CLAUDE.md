@@ -20,6 +20,26 @@ npm run all:posix       # lint + build + zip -> Genvid_Marketplace.c3addon (zip)
 npx http-server src --cors   # dev: load http://localhost:8080/addon.json in C3 (not 127.0.0.1, CSP)
 ```
 
+## CI / Release (GitHub Actions)
+
+CI lives in `.github/workflows/` (the repo migrated off CircleCI):
+
+- `ci.yml` — runs `npm ci && npm run lint && npm run build` on pushes to `main`
+  and on pull requests. Validation only; produces no artifact.
+- `release.yml` — on pushing a version tag (`[0-9]+.*`, e.g. `1.0.0.0`), lints,
+  builds, zips `Genvid_Marketplace.c3addon`, and publishes it as an asset on a
+  GitHub Release for that tag.
+
+To cut a release, bump `version` in `src/addon.json`, commit, then push a matching
+tag:
+
+```bash
+git tag 1.0.0.1 && git push origin 1.0.0.1
+```
+
+The legacy Azure-blob / 1Password upload was dropped — GitHub Releases is now the
+only distribution target.
+
 ## Commit convention
 
 Plain GitHub-style **imperative subject lines**. Do **not** use the `BUR-XXXX:`
